@@ -1,29 +1,8 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import { Form, SubmitButton } from './styles'; // Import stylizowanych komponentów
 import RecipeDescriptionFields from '../RecipeDescriptionFields/RecipeDescriptionFields';
 import RecipeIngredientsFields from '../RecipeIngredientsFields/RecipeIngredientsFields';
 import RecipePreparationFields from '../RecipePreparationFields/RecipePreparationFields';
-
-// Stylowanie formularza
-const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-`;
-
-const SubmitButton = styled.button`
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #0056b3;
-  }
-`;
 
 const AddRecipeForm = () => {
   const [recipeData, setRecipeData] = useState({
@@ -53,7 +32,7 @@ const AddRecipeForm = () => {
         recipeData={recipeData}
         setRecipeData={setRecipeData}
       />
-      <SubmitButton type="submit">Dodaj przepis</SubmitButton>
+      <SubmitButton type="submit">Add</SubmitButton>
     </Form>
   );
 };

@@ -1,4 +1,9 @@
 import React from 'react';
+import {
+  PreparationContainer,
+  PreparationTitle,
+  PreparationTextarea,
+} from './styles'; // Załóżmy, że plik ze stylami nazywa się styles.js
 
 const RecipePreparationFields = ({ recipeData, setRecipeData }) => {
   const handleChange = e => {
@@ -6,14 +11,15 @@ const RecipePreparationFields = ({ recipeData, setRecipeData }) => {
   };
 
   return (
-    <div>
-      <label>Sposób przygotowania</label>
-      <textarea
+    <PreparationContainer>
+      <PreparationTitle>Recipe Preparation</PreparationTitle>
+      <PreparationTextarea
         name="preparation"
+        placeholder="Enter recipe"
         value={recipeData.preparation}
         onChange={handleChange}
       />
-    </div>
+    </PreparationContainer>
   );
 };
 

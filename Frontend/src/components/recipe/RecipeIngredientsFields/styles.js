@@ -26,8 +26,9 @@ export const IngredientInput = styled.input`
   margin-right: 0px;
   border: none;
   border-radius: 4px 0 0 4px;
-  width: 15px;
+  width: 40px;
   background-color: #d9d9d9;
+  font-size: 14px;
 `;
 
 export const AddIngredientButton = styled.button`
@@ -61,11 +62,13 @@ export const RemoveIngredientButton = styled.button`
 export const unitSelect = {
   control: provided => ({
     ...provided,
-    width: '70px',
+    padding: '0',
+    width: '80px',
     border: 'none',
     boxShadow: 'none',
     backgroundColor: '#D9D9D9',
     borderRadius: '0 4px 4px 0',
+    fontSize: ' 14px',
     '&:hover': {
       border: '1px solid #aaa',
     },
@@ -80,7 +83,7 @@ export const ingredientSelect = {
     ...provided,
     border: 'none',
     boxShadow: 'none',
-    width: '200px',
+    width: '150px',
     borderRadius: '0',
     '&:hover': {
       border: '1px solid #aaa',
