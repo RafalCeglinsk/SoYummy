@@ -1,3 +1,8 @@
+import {lazy} from "react"
+import { Router, Routes } from "../node_modules/react-router-dom/dist/index";
+
+const ShoppingListPage = lazy(() => import("./pages/ShoppingListPage/ShoppingListPage.jsx"))
+
 export const App = () => {
   return (
     <div
@@ -10,7 +15,12 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template
+     <Router>
+      <Routes  path ="/shopping-list" element={
+      <ShoppingListPage/>}/>
+     </Router>
     </div>
   );
 };
+
+export default App
