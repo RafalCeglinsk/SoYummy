@@ -4,10 +4,8 @@ import { App } from 'App.jsx';
 import './index.css';
 import { BrowserRouter } from 'react-router-dom';
 
-const basename = '/SoYummy';
-
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename={basename}>
+  <BrowserRouter basename="/SoYummy">
     <App />
   </BrowserRouter>
 );
