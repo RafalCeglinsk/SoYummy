@@ -8,14 +8,17 @@ export const FieldContainer = styled.div`
 
 export const Input = styled.input`
   padding-bottom: 8px;
+  font-size: 16px;
   border-bottom: 1px solid #ccc;
   border-top: none;
   border-left: none;
   border-right: none;
+  border-radius: 0;
 `;
 
 export const Textarea = styled.textarea`
   border: 1px solid #ccc;
+  font-size: 16px;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -23,6 +26,7 @@ export const Textarea = styled.textarea`
 
 export const DisabledInput = styled.input`
   flex: 1;
+  font-size: 16px;
   background-color: white;
   border: none;
 `;
@@ -32,7 +36,7 @@ export const SelectContainer = styled.div`
   flex-direction: row;
   gap: 10px;
   align-items: center;
-
+  font-size: 16px;
   border-bottom: 1px solid #ccc;
 `;
 
@@ -40,7 +44,7 @@ export const customSelectStyles = {
   control: provided => ({
     ...provided,
     border: 'none',
-    fontSize: '12px',
+    fontSize: '16px',
     '&:hover': { borderColor: '#aaa' }, // zmiana koloru ramki przy najechaniu
   }),
   option: (provided, state) => ({

@@ -13,6 +13,7 @@ export const PreparationTitle = styled.h3`
 
 export const PreparationTextarea = styled.textarea`
   font-family: 'Arial', sans-serif;
+  font-size: 16px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;

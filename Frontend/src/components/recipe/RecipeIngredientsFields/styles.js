@@ -28,7 +28,7 @@ export const IngredientInput = styled.input`
   border-radius: 4px 0 0 4px;
   width: 40px;
   background-color: #d9d9d9;
-  font-size: 14px;
+  font-size: 16px;
 `;
 
 export const AddIngredientButton = styled.button`
@@ -68,7 +68,7 @@ export const unitSelect = {
     boxShadow: 'none',
     backgroundColor: '#D9D9D9',
     borderRadius: '0 4px 4px 0',
-    fontSize: ' 14px',
+    fontSize: ' 16px',
     '&:hover': {
       border: '1px solid #aaa',
     },
@@ -84,6 +84,7 @@ export const ingredientSelect = {
     border: 'none',
     boxShadow: 'none',
     width: '150px',
+    fontSize: ' 16px',
     borderRadius: '0',
     '&:hover': {
       border: '1px solid #aaa',
