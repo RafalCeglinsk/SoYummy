@@ -11,19 +11,35 @@ import { SocialWrapper, SocialIconStyle } from './SocialMediaBar.styled';
 export function SocialMediaBar() {
   return (
     <SocialWrapper>
-      <SocialIconStyle>
+      <SocialIconStyle
+        target="blanc"
+        rel="noopener noreferrer"
+        href="https://www.facebook.com/"
+      >
         <RenderFacebook />
       </SocialIconStyle>
 
-      <SocialIconStyle>
+      <SocialIconStyle
+        target="blanc"
+        rel="noopener noreferrer"
+        href="https://www.youtube.com/"
+      >
         <RenderYoutube />
       </SocialIconStyle>
 
-      <SocialIconStyle>
+      <SocialIconStyle
+        target="blanc"
+        rel="noopener noreferrer"
+        href="https://twitter.com/"
+      >
         <RenderTwitter />
       </SocialIconStyle>
 
-      <SocialIconStyle>
+      <SocialIconStyle
+        target="blanc"
+        rel="noopener noreferrer"
+        href="https://www.instagram.com/"
+      >
         <RenderInstargram />
       </SocialIconStyle>
     </SocialWrapper>
