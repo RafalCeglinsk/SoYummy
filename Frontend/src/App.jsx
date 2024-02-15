@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AddRecipePage from './pages/AddRecipePage';
-// import { SocialMediaBar } from 'components/SocialMediaBar/SocialMediaBar';
+import { SocialMediaBar } from 'components/SocialMediaBar/SocialMediaBar';
 
 export const App = () => {
   return (
@@ -11,7 +11,7 @@ export const App = () => {
       </Routes>
       <div>
         <p>FONT text TEST</p>
-        {/* <SocialMediaBar /> */}
+        <SocialMediaBar />
       </div>
     </Router>
   );
