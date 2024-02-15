@@ -1,12 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AddRecipePage from './pages/AddRecipePage';
 
 export const App = () => {
   return (
-    <Routes>
-      <Route path="/add" element={<AddRecipePage />} />
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/add" element={<AddRecipePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
