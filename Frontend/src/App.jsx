@@ -1,6 +1,5 @@
 import {lazy} from "react"
-import { Router, Route } from "react-router-dom";
-
+import { Routes, Route } from "react-router-dom";
 const ShoppingListPage = lazy(() => import("./pages/ShoppingListPage/ShoppingListPage.jsx"))
 
 export const App = () => {
@@ -15,10 +14,10 @@ export const App = () => {
         color: '#010101'
       }}
     >
-     <Router>
+     <Routes>
       <Route  path ="/shopping-list" element={
       <ShoppingListPage/>}/>
-     </Router>
+     </Routes>
     </div>
   );
 };
