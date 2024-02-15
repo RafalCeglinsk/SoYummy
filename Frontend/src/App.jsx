@@ -1,5 +1,5 @@
 import {lazy} from "react"
-import { Router, Routes } from "../node_modules/react-router-dom/dist/index";
+import { Router, Route } from "react-router-dom";
 
 const ShoppingListPage = lazy(() => import("./pages/ShoppingListPage/ShoppingListPage.jsx"))
 
@@ -16,7 +16,7 @@ export const App = () => {
       }}
     >
      <Router>
-      <Routes  path ="/shopping-list" element={
+      <Route  path ="/shopping-list" element={
       <ShoppingListPage/>}/>
      </Router>
     </div>
