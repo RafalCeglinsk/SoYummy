@@ -1,12 +1,19 @@
 import styled from 'styled-components';
 
 export const MainWrapper = styled.div`
+    
+display: flex;
+flex-direction: column;
+gap:24px;
+`
+export const HeroWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 14px;
   font-weight: 400;
+
 `;
 export const MainTitle = styled.div`
   font-size: 60px;
