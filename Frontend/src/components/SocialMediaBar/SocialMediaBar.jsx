@@ -1,12 +1,13 @@
 import React from 'react';
+
 import {
   RenderFacebook,
   RenderYoutube,
   RenderTwitter,
   RenderInstargram,
-} from './RenderSvg';
+} from 'components/RenderSvg/RenderSvg.jsx';
 
-import { SocialWrapper, SocialIconStyle } from './SocialMediaBar.styled';
+import { SocialWrapper, SocialIconStyle } from './SocialMediaBar.styled.jsx';
 
 export function SocialMediaBar() {
   return (
