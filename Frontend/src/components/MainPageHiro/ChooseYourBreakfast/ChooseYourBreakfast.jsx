@@ -5,6 +5,7 @@ import { ContentContainer, TextContainer,LinkRecipies } from './ChooseYourBreakf
 
 export function ChooseYourBreakfast() {
   return (
+    
     <ContentContainer>
       <TextContainer>
         <span>Delicious and healthy</span> way to enjoy a variety of fresh
