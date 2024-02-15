@@ -1,17 +1,27 @@
 import styled from 'styled-components';
 
-import BgImg from "../../../images/MainPageHero/ChooseYour1x.png"
+ import BgImg from "../../../images/MainPageHero/ChooseYour1x.png"
+import BgImg2x from '../../../images/MainPageHero/ChooseYour2x.png'
 
 
+export const SaladContainer = styled.div`
 
-export const ContentContainer = styled.div`
-  position: relative;
-  background-size: cover;
+   position: relative;
+    max-width: 100%;
+    width: 320px;
+  height: 296px;
+
+    position: relative;
+    background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(${BgImg});
-
-`;
+  /* background-image: url(${BgImg}); */
+  background-image: -webkit-image-set(
+    url(${BgImg}) 1x,
+    url(${BgImg2x}) 2x
+  );
+ 
+`
 
 export const TextContainer = styled.div`
 
@@ -30,6 +40,8 @@ export const TextContainer = styled.div`
     color: var(--color-text-5);
   }
 `;
+
+
 export const LinkRecipies = styled.a`
   display: flex;
   justify-content: flex-end;
@@ -42,3 +54,4 @@ export const LinkRecipies = styled.a`
     color: var(--color-text-4);
   }
 `;
+
