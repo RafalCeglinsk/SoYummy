@@ -10,18 +10,16 @@ const SearchBarStyled = styled.div`
 
   @media screen and (min-width: 768px) {
     max-width: 368px;
- 
   }
 
   @media screen and (min-width: 1440px) {
     max-width: 510px;
-
   }
 
   input {
     padding: 16px 113px 16px 32px;
     width: 100%;
-  
+
     font-size: 12px;
     line-height: 21px;
     border: none;
@@ -32,15 +30,15 @@ const SearchBarStyled = styled.div`
     color: var(--color-text-3);
     transition: background-color var(--transition-time) var(--cubic);
 
-    &:hover{
-   
-        transform: translateX(-2px);
-
+    &:hover {
+      transform: translateX(-2px);
     }
     &::placeholder {
       color: #bdbdbd;
     }
-
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
   }
 
   button {
@@ -57,9 +55,9 @@ const SearchBarStyled = styled.div`
     width: 30%;
 
     &:hover,
-  &:focus {
-    background-color: var(--color-icons-3);
-  }
+    &:focus {
+      background-color: var(--color-icons-3);
+    }
   }
 `;
 
